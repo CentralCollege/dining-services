@@ -1,1 +1,0 @@
-{"virtualbox":{"/var/www/wordpress/wp-content/themes/president":{"owner":"www-data","group":"www-data","guestpath":"/var/www/wordpress/wp-content/themes/president","hostpath":"C:/Users/bohrj/Desktop/dining-services","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/bohrj/Desktop/dining-services/vagrant","disabled":false}}}
