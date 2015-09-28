@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www/wordpress/wp-content/themes/president":{"owner":"www-data","group":"www-data","guestpath":"/var/www/wordpress/wp-content/themes/president","hostpath":"C:/Users/oyenj/Desktop/president","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/oyenj/Desktop/president/vagrant","disabled":false}}}

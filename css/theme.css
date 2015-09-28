@@ -1,0 +1,542 @@
+body{
+	margin:0;
+	color:#333;
+	font:11px/20px Helvetica, Arial, sans-serif;
+	background:#acacac;
+	min-width:988px;
+}
+img{border-style:none;}
+a{
+	text-decoration:none;
+	color:#000;
+}
+a:hover{text-decoration:underline;}
+input, textarea, select{
+	font:100% arial,sans-serif;
+	vertical-align:middle;
+	color:#000;
+}
+form, fieldset{
+	margin:0;
+	padding:0;
+	border-style:none;
+}
+#wrapper{
+	width:100%;
+	height:936px;
+	position:relative;
+	overflow:hidden;
+	background:url(http://img.centralcollege.info/departments/diningservices/bg-header.jpg) no-repeat 50% 42px #000;
+}
+.gallery-holder{
+	width:1235px;
+	height:264px;
+	overflow:hidden;
+}
+.gallery-holder ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:left;
+	width:99999px;
+}
+.gallery-holder li{
+	float:left;
+	width:1235px;
+}
+#header{
+	background:url(../img/gradient-red.jpg) repeat-x;
+	border-bottom:3px solid #000;
+}
+#header .holder{
+	width:886px;
+	margin:0 auto;
+	padding:23px 117px 7px 0;
+	position: relative;
+	z-index: 3;
+}
+#header .holder:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.logo{
+	background:url(../img/12centralCollegeLogo.png) no-repeat;
+	width:279px;
+	height:130px;
+	overflow:hidden;
+	text-indent:-9999px;
+	float:left;
+	position: relative;
+	z-index: 4;
+}
+.logo a{
+	display:block;
+	height:100%;
+}
+.nav{
+	margin:0;
+	padding:0;
+	position:absolute;
+	right:120px;
+	top:22px;
+	padding:0;
+	list-style:none;
+	font-size:14px;
+	line-height:14px;
+	font-weight:bold;
+}
+.nav li{
+	display:inline;
+	margin:0 0 0 14px;
+}
+.nav a{color:#fff;}
+.main-nav{
+	margin:106px 0 0;
+	padding:0;
+	list-style:none;
+	float:right;
+	font-size:16px;
+	line-height:16px;
+	overflow:hidden;
+}
+.main-nav li{
+	float:left;
+	margin:0 -11px 0 0;
+	padding:9px 20px 8px 27px;
+	background:url(../img/divider-01.jpg) no-repeat right 0;
+}
+.main-nav a{
+	color:#fff;
+	text-transform:uppercase;
+}
+.intro .centring{
+	width:1259px;
+	height:264px;
+	margin:0 auto;
+	position:relative;
+}
+.intro{
+	margin:0 -128px;
+	position: relative;
+	z-index: 1;
+}
+.intro .image{
+	display:block;
+	margin:0 auto;
+}
+.swicher{
+	overflow:hidden;
+	position:absolute;
+	right:218px;
+	bottom:15px;
+	padding:0;
+	margin:0;
+	list-style:none;
+	font-size:11px;
+	font-weight:bold;
+}
+.swicher li{
+	float:left;
+	margin:0 4px 0 0;
+}
+.swicher li a{
+	float:left;
+	text-align:center;
+	padding:1px 0 0;
+	width:14px;
+	color:#fff;
+	height:14px;
+	line-height:13px;
+	background:#000;
+	text-decoration:none;
+}
+.swicher li.active a{background:#f00;}
+#main{
+	background:url(http://img.centralcollege.info/departments/diningservices/bg-wood.jpg) repeat-x 50% 0;
+	margin:0 -28px;
+	position:relative;
+	z-index:4;
+}
+.m1{
+	width:1059px;
+	margin:0 auto;
+}
+.m1:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+#main .holder{
+	background:url(http://img.centralcollege.info/departments/diningservices/notebook.png) no-repeat 13px 0;
+	float: left;
+	height: 388px;
+	margin: -16px 0 0 15px;
+	padding: 27px 94px 0 145px;
+	position: relative;
+	width: 832px;
+	z-index: 2;
+}
+#main .holder:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+#content{
+	float:right;
+	width:539px;
+}
+.plain #content{
+	background:url(../img/note.png) no-repeat;
+	width:539px;
+	height:531px;
+	margin:-283px 21px 0 0;
+	padding:70px 80px 70px 107px;
+	position:relative;
+	z-index:2;
+}
+.text-block{
+	height: 565px;
+	overflow: hidden;
+}
+#main.plain .holder{background:none;}
+#main.plain #sidebar{
+	background:url(../img/napkin.png) no-repeat;
+	width:430px;
+	height:403px;
+	margin:-28px -213px 0 -133px;
+	position:relative;
+	z-index:1;
+}
+.post{
+	overflow:hidden;
+	margin:0 0 27px;
+	padding:1px 0 0 11px;
+}
+.post .image{
+	background:url(../img/bg-img-holder.png) no-repeat;
+	width:213px;
+	float:right;
+	padding:25px 0 0;
+	cursor:pointer;
+}
+.post .image .image-holder{
+	background:url(../img/bg-img-holder.png) no-repeat -450px 100%;
+	padding:0 0 25px;
+	float:left;
+	width:215px;
+}
+.post .image .frame{
+	background:url(../img/bg-img-holder.png) repeat-y -225px 0;
+	padding:0 0 0 13px;
+	float:left;
+	width:215px;
+}
+.post .image a{display:block;}
+.post .image img{
+	display:block;
+	margin:-14px 0 -6px;
+}
+.post .text{
+	padding:5px 0 0;
+	width: 305px;
+	float: left;
+	max-height: 320px;
+}
+.post p{margin:0;}
+.widgets{width:561px;}
+.widgets:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.widget{
+	float:left;
+	width:174px;
+	margin:0 13px 0 0;
+}
+.widget .heading{
+	background:url(../img/btn.png) no-repeat;
+	width:148px;
+	height:21px;
+	color:#fff;
+	padding:1px 13px 0;
+	margin:2px 0 3px;
+}
+.widget h2{
+	margin:0;
+	font-size:14px;
+}
+.navigation{
+	margin:0;
+	padding:3px 6px 0 12px;
+	list-style:none;
+	line-height:17px;
+	font-size:14px;
+}
+.navigation li{
+	background:url(../img/bullet.gif) no-repeat 0 9px;
+	padding:0 0 0 11px;
+}
+.widget .text{padding:0 6px 0 12px;}
+.widget p{margin:0;}
+.like{
+	display:block;
+	margin:0 0 0 8px;
+}
+.like img{display:block;}
+.button{
+	background:url(../img/btn.png) no-repeat 0 -31px;
+	width:184px;
+	height:45px;
+	display:block;
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+	font-weight:bold;
+	padding:15px 2px 1px 0;
+	margin:0 0 0 -3px;
+}
+#sidebar{
+	width:220px;
+	float:left;
+	padding:1px 0 0;
+	position:relative;
+	z-index:100;
+}
+.nav-bar{
+	margin:0;
+	padding:7px 0 0 31px;
+	list-style:none;
+	font-size:13px;
+	overflow:hidden;
+}
+.nav-bar li{
+	width:100%;
+	overflow:hidden;
+	vertical-align:top;
+}
+.nav-bar a{
+	color:#fff;
+	background:url(../img/btn.png) no-repeat -196px 0;
+	float: left;
+	width: 173px;
+	padding:10px 0 4px;
+	cursor: pointer;
+}
+.nav-bar .button-holder{
+	background:url(../img/btn.png) no-repeat -379px 100%;
+	padding: 0 0 8px;
+	float: left;
+	width: 173px;
+}
+.nav-bar .button-frame{
+	background: #aaa;
+	padding: 0 20px 0 20px;
+	float: left;
+	width: 133px;
+}
+.nav-bar strong{
+	float: left;
+	margin: -10px 0 -8px;
+}
+.nav-bar a:hover strong{text-decoration: underline;}
+.text-menu{
+	margin:0 0 7px -15px;
+	width:232px;
+	height:54px;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+.central-market { background:url(../img/text-menu.png) no-repeat; }
+.cafe { background:url(../img/text-menu-geisler.png) no-repeat; }
+.grand-central { background:url(../img/text-menu-grandcentral.png) no-repeat; }
+h2.menu { font-size:16px;font-weight:bold; }
+
+#sidebar h3{
+	margin:0 0 2px;
+	font-size:16px;
+	line-height:16px;
+}
+#sidebar dl{
+	overflow:hidden;
+	margin:0 0 18px;
+	font-size:12px;
+	line-height:18px;
+}
+#sidebar dt{
+	margin:0 2px 0 0;
+	float:left;
+}
+#sidebar dd{margin:0;}
+#footer{
+	background:url(../img/gradient-gray.jpg) repeat-x 0 bottom #f1f1f1;
+	font-size:12px;
+}
+#footer .holder{
+	width:978px;
+	margin:0 auto;
+	padding:12px 0 36px 61px;
+}
+.add-nav{
+	margin:0 0 13px;
+	padding:0;
+	list-style:none;
+	text-align:center;
+}
+.add-nav li{
+	display:inline;
+	background:url(../img/divider-02.gif) no-repeat 0 50%;
+	padding:0 4px;
+}
+.add-nav li:first-child{background:none;}
+.add-nav a{color:#a5a5a5;}
+#footer address{
+	font-style:normal;
+	color:#a5a5a5;
+	text-align:center;
+}
+#footer address a{color:#a5a5a5;}
+#footer address span{
+	padding:0 4px;
+	background:url(../img/divider-02.gif) no-repeat;
+}
+#footer address span:first-child{background:none;}
+.fork{
+	background:url(../img/bg-fork-spoon.png) no-repeat;
+	width:99px;
+	height:670px;
+	position:absolute;
+	left:47px;
+	top:-278px;
+	z-index:5;
+}
+.fork-shadow{
+	background:url(../img/bg-fork-spoon.png) no-repeat -109px 0;
+	width:90px;
+	height:383px;
+	position:absolute;
+	left:59px;
+	top:11px;
+	z-index:3;
+}
+.fork-shadow-top{
+	background:url(../img/bg-fork-spoon.png) no-repeat -209px 0;
+	width:303px;
+	height:322px;
+	position:absolute;
+	left:31px;
+	top:109px;
+	z-index:3;
+}
+.sticker{
+	background:url(../img/sticker.png) no-repeat;
+	width:245px;
+	height:40px;
+	position:absolute;
+	left:22px;
+	top:-242px;
+	z-index:6;
+	text-align:right;
+	font-size:13px;
+	padding:4px 18px 0 0;
+}
+*+html .sticker{top:-231px;}
+.sticker a{color:#fff;}
+.spoon-top{
+	background:url(../img/bg-fork-spoon.png) no-repeat -575px 0;
+	width:137px;
+	height:226px;
+	position:absolute;
+	right:52px;
+	top:-254px;
+	z-index:4;
+}
+.spoon{
+	background:url(../img/bg-fork-spoon.png) no-repeat -522px 0;
+	width:43px;
+	height:422px;
+	position:absolute;
+	right:98px;
+	top:-28px;
+	z-index:4;
+}
+.circle{
+	background:url(http://img.centralcollege.info/departments/diningservices/circle.png) no-repeat scroll 0 0 transparent;
+	bottom:-132px;
+	height:281px;
+	left:-76px;
+	position:absolute;
+	width:284px;
+	z-index:3;
+}
+.vscrollable{
+	height:250px;
+	overflow:auto;
+}
+scroll-content{height:260px;}
+#info-part.v {
+	width:220px;
+	overflow:hidden;
+}
+.vscroll-bar{left: 207px !important;}
+.vscroll-up{
+	margin:1px 0 0 !important;
+	cursor:pointer;
+}
+.vscroll-down {cursor:pointer;}
+#left-part.v{overflow:hidden;}
+#left-part.v .text-box{
+	overflow:auto;
+	position:relative;
+	height:248px;
+	padding-right:5px;
+	margin-bottom:12px;
+}
+#left-part.v .vscroll-line{
+	left:10px !important;
+	width:2px !important;
+	overflow:hidden;
+	background:gray;
+	display:none;
+}
+#left-part.v .vscroll-slider{
+	left:1px !important;
+	width:22px !important;
+	background:red;
+	display:none;
+}
+
+a { color: #333; }
+#content a:hover { color: #0000FF; }
+#content { width: 510px !important; margin-right: 50px !important; }
+.widgets { margin-left: 10px; }
+
+.widget h2 a, .widget h2 a:hover { color: #fff !important;}
+strong, h1, h2, h3, h4, h5 { font-weight: bold; }
+h1 { font-size: 24px; }
+h2 { font-size: 20px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5 { font-size: 14px; }
+em { font-style: italic; }
+
+#content .vscrollable { height: 300px; }
+#content .vscroll-bar { left: 500px !important; }
+.plain #content .vscroll-bar { left: 500px !important; }
+.plain #content .vscrollable { height: 550px !important; }
+
+.post ul { margin-left: 20px; }
+.post { margin:  0 0 10px !important;}
+
+.button { display: inline-block !important;}
+.button:hover { color: #fff !important; }
+.blog .post h1 a { color: #9f0404; }
+.blog .post { margin-bottom: 20px; }
+
+#content table { margin: 10px 0 !important; /*width: 100%;*/ }
+#content table thead { background-color: #000; color: #fff; }
+#content table, #content table td  { border: solid 1px #000;}
+#content table td { text-align: center; padding: 3px; }
+
+#content table.no-border, #content table.no-border td { border: none; }
