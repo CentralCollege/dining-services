@@ -40,7 +40,7 @@ if( !is_admin()){
    wp_enqueue_script('jquery');
 }
 
-// Add awesome brower classes to body tag
+// Add awesome browser classes to body tag
 add_filter('body_class','browser_body_class');
 function browser_body_class($classes) {
 	global $is_lynx, $is_gecko, $is_IE, $is_opera, $is_NS4, $is_safari, $is_chrome, $is_iphone;

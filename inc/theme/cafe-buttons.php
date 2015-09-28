@@ -11,7 +11,7 @@
 		<?php }
 	?>
 	<?php
-		if (!is_page('grand-central-station')) { ?>
-			<a href="/diningservices/grand-central-station/" class="button">Grand Central Station</a>
+		if (!is_page('freds')) { ?>
+			<a href="/diningservices/freds/" class="button">Fred's</a>
 		<?php }
 	?>
