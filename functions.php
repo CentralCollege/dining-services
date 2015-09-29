@@ -63,11 +63,10 @@ add_filter( 'the_generator', create_function('$a', "return null;") );
 
 // Custom Logo
 function custom_logo() { ?> 
-	<style type="text/css">
-		h1 a { background-image: url(
-			<?php echo get_bloginfo('template_directory'); ?>/img/logo.png
-		) !important;
-		 	height: 100px; }
+<style type="text/css">
+		.login h1 a { background-image: url(
+			<?php echo get_bloginfo('template_directory'); ?>/img/logo_login.png
+		) !important; height: 150px; width: 100% !important; background-size:auto; }
     </style>
 <?php }
 
