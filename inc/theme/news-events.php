@@ -1,6 +1,6 @@
 <?php
 
-if (is_page('central-market') || is_page('grand-central-station') || is_page('the-cafe-at-geisler')) {
+if (is_page('central-market') || is_page('freds') || is_page('the-cafe-at-geisler')) {
 	return;
 }
 
