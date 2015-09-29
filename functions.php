@@ -18,7 +18,7 @@ function CUI_remove_dashboard_widgets() {
 	remove_meta_box( 'dashboard_secondary', 'dashboard', 'side');
 }
 
-// Removes extra headers from wordpressogo
+// Removes extra headers from wordpress
 	remove_action('wp_head', 'rsd_link');
 	remove_action('wp_head', 'wp_generator');
 	remove_action('wp_head', 'feed_links', 2);
