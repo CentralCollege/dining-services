@@ -17,16 +17,16 @@ mkdir /var/www/wordpress
 ## Create an Apache vhost
 ## (This would probably already exist within your project)
 echo "<VirtualHost *:80>
-ServerName dev.president.central.edu
+ServerName dev.dining-services.central.edu
 DocumentRoot /var/www/wordpress
 <Directory /var/www/wordpress>
 	AllowOverride All
     Allow from All
 </Directory>  
-</VirtualHost>" > /var/www/wordpress/president.dev.conf
+</VirtualHost>" > /var/www/wordpress/dining-services.dev.conf
 
 ## Tell Apache about our vhost
-ln -s /var/www/wordpress/president.dev.conf /etc/apache2/sites-enabled/president.dev.conf
+ln -s /var/www/wordpress/dining-services.dev.conf /etc/apache2/sites-enabled/dining-services.dev.conf
 
 ## Tweak permissions for www-data user
 chgrp www-data /var/log/apache2
@@ -53,8 +53,8 @@ php5enmod software
 service apache2 reload
 
 ## Create a database and grant a user some permissions
-echo "create database president;" | mysql -u root
-echo "grant all on president.* to president@localhost identified by 'president';" | mysql -u root
+echo "create database dining-services;" | mysql -u root
+echo "grant all on dining-services.* to dining-services@localhost identified by 'dining-services';" | mysql -u root
 
 ## Create a default .htaccess
 echo "" > /var/www/wordpress/.htaccess
@@ -76,9 +76,9 @@ rm /var/www/wordpress/wp-config-sample.php
 ## Could use wp-cli for this too, but this'll do
 echo "<?php 
 \$table_prefix = 'foo_';
-define('DB_NAME',     'president');
-define('DB_USER',     'president');
-define('DB_PASSWORD', 'president');
+define('DB_NAME',     'dining-services');
+define('DB_USER',     'dining-services');
+define('DB_PASSWORD', 'dining-services');
 define('DB_HOST',     'localhost');
 define('DB_CHARSET',  'utf8');
 define('WPLANG', '' );
@@ -91,7 +91,7 @@ require_once(ABSPATH . 'wp-settings.php');
 /var/www/wordpress/wp-cli core install \
 	--url='http://192.168.56.111' \
 	--path=/var/www/wordpress \
-	--title='President' \
+	--title='dining-services' \
 	--admin_user=admin \
 	--admin_password=admin \
 	--admin_email=oyenj@central.edu \
@@ -106,7 +106,7 @@ require_once(ABSPATH . 'wp-settings.php');
 	--path=/var/www/wordpress \
 	--allow-root
 
-/var/www/wordpress/wp-cli option update blogdescription 'A test site for the president.' \
+/var/www/wordpress/wp-cli option update blogdescription 'A test site for the dining-services.' \
 	--path=/var/www/wordpress \
 	--allow-root
 
@@ -114,19 +114,19 @@ require_once(ABSPATH . 'wp-settings.php');
 	--path=/var/www/wordpress \
 	--allow-root
 	
-/var/www/wordpress/wp-cli theme activate president \
+/var/www/wordpress/wp-cli theme activate dining-services \
 	--path=/var/www/wordpress \
 	--allow-root
 
 # Check and see if there is an import file. If so download the import plugin and run it.
-file=/var/www/wordpress/wp-content/themes/president/wp-import-data.xml
+file=/var/www/wordpress/wp-content/themes/dining-services/wp-import-data.xml
 if [ -f $file ];
 then
 	/var/www/wordpress/wp-cli plugin install wordpress-importer --activate \
 		--path=/var/www/wordpress \
 		--allow-root
 		
-	/var/www/wordpress/wp-cli import '/var/www/wordpress/wp-content/themes/president/wp-import-data.xml' \
+	/var/www/wordpress/wp-cli import '/var/www/wordpress/wp-content/themes/dining-services/wp-import-data.xml' \
 		--authors=skip \
 		--path=/var/www/wordpress \
 		--allow-root
