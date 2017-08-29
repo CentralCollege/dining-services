@@ -1,10 +1,10 @@
 <div id="sidebar">
-	<?php 
-	if (!is_page_template('page-notebook.php') && !is_single() && !is_page('news-events') && !is_category()) { 
-	
-		if (is_page('catering') || is_child('catering')) { 
+	<?php
+	if (!is_page_template('page-notebook.php') && !is_single() && !is_page('news-events') && !is_category()) {
+
+		if (is_page('catering') || is_child('catering')) {
 			/* load catering menu */
-			wp_nav_menu( 
+			wp_nav_menu(
 				array(
 					'menu' 				=>	'catering_menu',
 					'menu_class'		=>	'nav-bar',
@@ -14,7 +14,7 @@
 				));
 		} else if (is_page('about') || is_child('about') ) {
 			/* load about menu */
-			wp_nav_menu( 
+			wp_nav_menu(
 				array(
 					'menu' 				=>	'about_menu',
 					'menu_class'		=>	'nav-bar',
@@ -22,31 +22,31 @@
 					'link_before'		=>	'<span class="button-holder"><span class="button-frame">',
 					'link_after'		=>	'</span></span>'
 				));
-		} else { 
-			/* if none of the above conditions are true, load menu feeds by default */ 
-			
+		} else {
+			/* if none of the above conditions are true, load menu feeds by default */
+
 			// set feed to central market by default
-			$feed = "http://www.central.edu/api/diningservices/centralMarket/";
+			$feed = "https://api.central.edu/diningServices/centralmarket/index.cfm";
 			$class = "central-market";
-			if (is_page('central-market')) { 
-				$feed = "http://www.central.edu/api/diningservices/centralMarket/";
+			if (is_page('central-market')) {
+				$feed = "https://api.central.edu/diningServices/centralmarket/index.cfm";
 				$class = "central-market";
 			}
-			if (is_page('the-cafe-at-geisler')) { 
+			if (is_page('the-cafe-at-geisler')) {
 				// no feed for cafe
-				$class = "cafe";					
+				$class = "cafe";
 			}
-			if (is_page('grand-central-station')) { 
+			if (is_page('grand-central-station')) {
 				$feed = "http://www.central.edu/api/diningservices/grandCentralStation/";
 				$class="grand-central";
 			}
 		?>
 			<h2 class="text-menu <?php if ($class) echo $class; ?>">central market menu</h2>
-			
+
 			<div id="info-part" class="v">
 				<div id="left-part" class="v">
 					<div class="text-box vscrollable">
-						<?php 
+						<?php
 							if (is_page('the-cafe-at-geisler')) { ?>
 								<h2 class="menu">Monday - Friday:</h2>
 								<p>7 a.m - 5 p.m</p>
@@ -55,15 +55,15 @@
 								<h2 class="menu">Sunday:</h2>
 								<p>6 p.m - 9 p.m</p>
 							<?php } else {
-								getMenuWidget($feed); 
+								getMenuWidget($feed);
 							}
 						?>
 					</div>
 				</div>
 			</div>
-	<?php } 
+	<?php }
 	} ?>
-</div> <!-- end sidebar -->	
+</div> <!-- end sidebar -->
 <div class="circle"></div>
 <div class="spoon-top"></div>
 <div class="spoon"></div>
