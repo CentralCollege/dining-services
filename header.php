@@ -12,7 +12,7 @@
 	
 	<!--Stylesheets-->
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/base.css" type="text/css" media="screen" charset="utf-8" />
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/theme.css?ver=2024.1" type="text/css" media="screen" charset="utf-8" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/theme.css?ver=2024.2" type="text/css" media="screen" charset="utf-8" />
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/wp.css" type="text/css" media="screen" charset="utf-8" />
 
 	<?php wp_head(); ?>
