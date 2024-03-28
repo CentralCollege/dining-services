@@ -26,10 +26,10 @@
 			/* if none of the above conditions are true, load menu feeds by default */
 
 			// set feed to central market by default
-			$feed = "https://api.central.edu/diningServices/centralmarket/index.cfm";
+			#$feed = "https://api.central.edu/diningServices/centralmarket/index.cfm";
 			$class = "central-market";
 			if (is_page('central-market')) {
-				$feed = "https://api.central.edu/diningServices/centralmarket/index.cfm";
+				#$feed = "https://api.central.edu/diningServices/centralmarket/index.cfm";
 				$class = "central-market";
 			}
 			if (is_page('the-cafe-at-geisler')) {
@@ -54,9 +54,9 @@
 								<p>Closed</p>
 								<h2 class="menu">Sunday:</h2>
 								<p>6 p.m - 9 p.m</p>
-<!-- 							 } else {
+ 							 <?php } else {
 								getMenuWidget($feed);
-							} -->
+							?>
 						
 					</div>
 				</div>
