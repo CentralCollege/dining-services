@@ -54,10 +54,10 @@
 								<p>Closed</p>
 								<h2 class="menu">Sunday:</h2>
 								<p>6 p.m - 9 p.m</p>
- 							 <?php } else {
+							<?php } else {
 								getMenuWidget($feed);
-							?>
-						
+							}
+						?>
 					</div>
 				</div>
 			</div>
