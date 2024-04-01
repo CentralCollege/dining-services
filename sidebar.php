@@ -50,7 +50,7 @@
 							if (is_page('the-cafe-at-geisler')) { ?>
 								<h2 class="menu">Monday - Friday:</h2>
 								<p>7 a.m - 3 p.m</p>
-								<h2 class="menu">Saturday - Sunday</h2>
+								<h2 class="menu">Saturday - Sunday:</h2>
 								<p>Closed</p>
 							<?php } else {
 								getMenuWidget($feed);
